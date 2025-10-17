@@ -44,7 +44,7 @@ button {
     margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 1), 0 1px 3px rgba(0, 0, 0, 1);
     font-size: 22px;
-    color:#0000CD;
+    color: #0000CD;
     background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
     flex-wrap: wrap;
 }
@@ -60,8 +60,8 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color:#EE82EE ;
-    flex-wrap:  wrap;
+    color: #EE82EE;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -69,19 +69,24 @@ h2 {
     color: #0000CD;
 }
 
-#options{
+#options {
     display: none;
 }
 
-#compout{
+#compout {
     color: #0000CD;
 }
 
-#win{
+#win {
     font-size: 110px;
 }
 
-#status{
+#status {
     font-size: x-large;
     color: #0000CD;
+}
+
+img {
+    height: 3rem;
+    visibility: hidden;
 }

@@ -9,6 +9,7 @@ let com = document.getElementById("compout");
 let win = document.getElementById("win");
 let info = document.getElementById("info");
 let states = document.getElementById("status");
+let img = document.querySelector("img");
 
 // let arr=Array.from(btn)
 
@@ -20,7 +21,7 @@ let states = document.getElementById("status");
 //     })
 // })
 
-stone.addEventListener("click", function () {
+stone.addEventListener("click", function (e) {
   info.style.display = "none";
   opt2.textContent = "You Choose";
   opt.textContent = "Stone";
@@ -31,20 +32,23 @@ stone.addEventListener("click", function () {
     com.textContent = "Computer Choose Scissor 😞";
     console.log("You Selected Stone");
     console.log("You Win 🎉");
+    img.style.visibility = "visible";
+    img.style.display = "block";
   } else {
     states.textContent = "You Loss";
     win.textContent = "😞";
     com.textContent = "Computer Choose Paper 🎉";
     console.log("You Selected Stone");
-    console.log("You Win 🎉");
+    console.log("You Loss 😞");
+    img.style.visibility = "visible";
+    img.style.display = "block";
   }
 });
-
 
 paper.addEventListener("click", function () {
   info.style.display = "none";
   opt2.textContent = "You Choose";
-  opt.textContent = "Stone";
+  opt.textContent = "Paper";
 
   if (randomNum === 2) {
     states.textContent = "You Won";
@@ -52,19 +56,23 @@ paper.addEventListener("click", function () {
     com.textContent = "Computer Choose Stone 😞";
     console.log("You Selected Paper");
     console.log("You Win 🎉");
+    img.style.visibility = "visible";
+    img.style.display = "block";
   } else {
     states.textContent = "You Loss";
     win.textContent = "😞";
     com.textContent = "Computer Choose Scissor 🎉";
     console.log("You Selected Paper");
-    console.log("You Win 🎉");
+    console.log("You Loss 😞");
+    img.style.visibility = "visible";
+    img.style.display = "block";
   }
 });
 
 scissor.addEventListener("click", function () {
   info.style.display = "none";
   opt2.textContent = "You Choose";
-  opt.textContent = "Stone";
+  opt.textContent = "Scissor";
 
   if (randomNum === 3) {
     states.textContent = "You Won";
@@ -72,13 +80,21 @@ scissor.addEventListener("click", function () {
     com.textContent = "Computer Choose Paper 😞";
     console.log("You Selected Scissor");
     console.log("You Win 🎉");
+    img.style.visibility = "visible";
+    img.style.display = "block";
   } else {
     states.textContent = "You Loss";
     win.textContent = "😞";
     com.textContent = "Computer Choose Stone 🎉";
     console.log("You Selected Paper");
-    console.log("You Win 🎉");
+    console.log("You Loss 😞");
+    img.style.visibility = "visible";
+    img.style.display = "block";
   }
+});
+
+img.addEventListener("click", function () {
+  location.reload();
 });
 
 console.log(randomNum);
