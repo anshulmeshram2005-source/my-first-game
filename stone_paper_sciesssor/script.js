@@ -34,6 +34,10 @@ stone.addEventListener("click", function (e) {
     console.log("You Win 🎉");
     img.style.visibility = "visible";
     img.style.display = "block";
+
+    btn.forEach(function (btn) {
+      btn.disabled = true;
+    });
   } else {
     states.textContent = "You Loss";
     win.textContent = "😞";
@@ -42,6 +46,10 @@ stone.addEventListener("click", function (e) {
     console.log("You Loss 😞");
     img.style.visibility = "visible";
     img.style.display = "block";
+
+    btn.forEach(function (btn) {
+      btn.disabled = true;
+    });
   }
 });
 
@@ -58,6 +66,10 @@ paper.addEventListener("click", function () {
     console.log("You Win 🎉");
     img.style.visibility = "visible";
     img.style.display = "block";
+
+    btn.forEach(function (btn) {
+      btn.disabled = true;
+    });
   } else {
     states.textContent = "You Loss";
     win.textContent = "😞";
@@ -66,6 +78,10 @@ paper.addEventListener("click", function () {
     console.log("You Loss 😞");
     img.style.visibility = "visible";
     img.style.display = "block";
+
+    btn.forEach(function (btn) {
+      btn.disabled = true;
+    });
   }
 });
 
@@ -82,6 +98,10 @@ scissor.addEventListener("click", function () {
     console.log("You Win 🎉");
     img.style.visibility = "visible";
     img.style.display = "block";
+
+    btn.forEach(function (btn) {
+      btn.disabled = true;
+    });
   } else {
     states.textContent = "You Loss";
     win.textContent = "😞";
@@ -90,6 +110,10 @@ scissor.addEventListener("click", function () {
     console.log("You Loss 😞");
     img.style.visibility = "visible";
     img.style.display = "block";
+
+    btn.forEach(function (btn) {
+      btn.disabled = true;
+    });
   }
 });
 
